@@ -41,3 +41,9 @@ Rake tasks go in lib/tasks.
     rake db:seed
 
 _Make sure you write your seed files so that they can be re-run on a database and it won't add duplicate data._
+
+## Assets
+
+Asset pipeline is a way for rails to combine, minify and compress your assets so that the user gets the fastest experience. It provides dependency management for asset files and provides simple tools that get run when you deploy your application.
+
+    rake assets:precompile
