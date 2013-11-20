@@ -1,0 +1,19 @@
+.row
+  .col-md-6
+    = form_for @product do |form|
+      .form-group{ :class => form_group_class(@product, :name) }
+        = form.label "Name"
+        = form.text_field :name, :class => "form-control"
+        - if error = error_for(@product, :name)
+          %p.help-block= error
+        - else
+          %p.help-block Whats the name of this product
+      .form-group{ :class => form_group_class(@product, :description) }
+        = form.label "Description"
+        = form.text_area :description, :class => "form-control"
+        - if error = error_for(@product, :description)
+          %p.help-block= error
+        - else
+          %p.help-block Enter a detailed description that makes the customer buy the product
+      = form.submit "Save product", :class => "btn btn-primary"
+      = link_to "Cancel and go back", products_path, :class => "btn btn-default"
