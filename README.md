@@ -55,3 +55,17 @@ Asset pipeline is a way for rails to combine, minify and compress your assets so
 _rails console production_ runs console using the production environment.
 
     rails dbconsole
+
+
+## Rspec
+
+Update gem file.
+
+    rails generate rspec:install
+    mkdir spec/models
+    mkdir spec/controllers
+    rake db:test:prepare
+
+Running specs
+
+    rspec
