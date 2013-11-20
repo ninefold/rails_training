@@ -35,3 +35,9 @@ List all rake tasks in the system that have a description.
 - routes - list all routes
 
 Rake tasks go in lib/tasks.
+
+## Seed
+
+    rake db:seed
+
+_Make sure you write your seed files so that they can be re-run on a database and it won't add duplicate data._
