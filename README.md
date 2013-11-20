@@ -15,3 +15,11 @@ Open http://localhost:3000/products
 ## Database
 
     rails dbconsole
+
+## Migrations
+
+    rails generate migration add_active_to_products
+
+Add migration.
+
+    rake db:migrate
