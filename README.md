@@ -47,3 +47,11 @@ _Make sure you write your seed files so that they can be re-run on a database an
 Asset pipeline is a way for rails to combine, minify and compress your assets so that the user gets the fastest experience. It provides dependency management for asset files and provides simple tools that get run when you deploy your application.
 
     rake assets:precompile
+
+## Debugging
+
+    rails console
+
+_rails console production_ runs console using the production environment.
+
+    rails dbconsole
