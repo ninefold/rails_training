@@ -11,3 +11,7 @@ Update file with your config.
     rails server
 
 Open http://localhost:3000/products
+
+## Database
+
+    rails dbconsole
