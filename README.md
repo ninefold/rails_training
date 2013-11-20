@@ -1,5 +1,38 @@
 Welcome to training.
 
+## Git
+
+- A distributed version control system.
+- You can edit code on the plane, commit it, test it and then merge it with everyone elses code when you land.
+
+Messing with a git repository.
+
+    mkdir test
+    cd test
+    git init
+    echo "Hello world" > file.txt
+    git add .
+    git commit
+    echo "Hello world again" >> file.txt
+    git diff
+    git status
+    git add file.txt
+    git commit
+    git log
+    echo "Goodbye" >> file.txt
+    git diff
+    git status
+    git add file.txt
+    git commit
+    git log
+    git checkout <SHA OF COMMIT>
+    git checkout master
+    git log -p
+    git checkout -b test-branch
+    git checkout master
+
+Make sure you play with creating a github repository.
+
 ## Setup
 
     bundle install
